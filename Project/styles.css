@@ -1,0 +1,45 @@
+
+
+
+.ext-body {
+	background-color: orangered;
+}
+.ext-h1 {
+	text-align: center;
+	color: ghostwhite;
+	font-size: 44px;
+}
+.external-nav-table {
+	margin: 0 auto;
+	border-collapse: collapse;
+	width: 100%;
+	background-color: blanchedalmond;
+}
+.external-nav-td {
+	padding: 10px;
+}
+.ext-nav-a {
+	color: darkblue;
+	font-size: 20px;
+	text-decoration: none;
+}
+.ext-h2 {
+	text-align: center;
+}
+.image-container {
+    display: inline-flex;
+    gap: 45px;
+}
+p {
+    font-family: Ariel, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    font-style: italic;
+    color: black;
+}
+.section-container {
+	display: grid;
+	justify-content: center;
+	align-items: center;
+}
+
