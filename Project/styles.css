@@ -1,45 +1,118 @@
-
-
-
+/* body background color */
 .ext-body {
-	background-color: orangered;
+    background-color: steelblue;
 }
+
+/* h1 alignment, color, and font size */
 .ext-h1 {
-	text-align: center;
-	color: ghostwhite;
-	font-size: 44px;
+    text-align: center;
+    color: ghostwhite;
+    font-size: 44px;
 }
+
+/* nav table styling */
 .external-nav-table {
-	margin: 0 auto;
-	border-collapse: collapse;
-	width: 100%;
-	background-color: blanchedalmond;
+    margin: 0 auto;
+    border-collapse: collapse;
+    width: 100%;
+    background-color: blanchedalmond;
 }
+
+/* nav padding */
 .external-nav-td {
-	padding: 10px;
+    padding: 10px;
 }
+
+/* nav color and font size */
 .ext-nav-a {
-	color: darkblue;
-	font-size: 20px;
-	text-decoration: none;
+    color: darkblue;
+    font-size: 20px;
+    text-decoration: none;
 }
+
+/* h2 alignment */
 .ext-h2 {
-	text-align: center;
+    text-align: center;
 }
+
 .image-container {
     display: inline-flex;
     gap: 45px;
 }
+
 p {
     font-family: Ariel, sans-serif;
     font-size: 18px;
     font-weight: bold;
     font-style: italic;
     color: black;
-}
-.section-container {
-	display: grid;
-	justify-content: center;
-	align-items: center;
+    line-height: 2;
 }
 
+.section-container {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+/* #map: Styles for the Google Map */
+#map {
+    width: 600px;
+    height: 400px;
+    margin-bottom: 20px;
+}
+
+/* #weather: Styles for the weather information display */
+#weather {
+    font-size: 1.2em;
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: white;
+    width: 300px;
+    text-align: center; /* This centers the text within the #weather element */
+}
+
+/* footer styles */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: blanchedalmond;
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid #ccc;
+}
+
+/* Accordion Styles */
+#accordion h3 {
+    background-color: darkblue; /* Background color for headers */
+    color: white; /* Text color */
+    padding: 10px;
+    margin: 0;
+    cursor: pointer;
+}
+
+#accordion .ui-accordion-content {
+    background-color: blanchedalmond; /* Background color for content panels */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
+/* Remove border from iframes */
+iframe {
+    border: none; /* Remove any borders */
+}
+
+/* Image Slider Styles */
+.image-slider {
+    margin: 0 auto;
+    width: 80%; /* Adjust width as needed */
+}
+
+.slick-slide img {
+    width: 50%;
+    height: auto;
+}
