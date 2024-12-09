@@ -1,62 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf-8">
-	<title>Cline Family Racing</title>
-	<meta name="author" content="William Barker">
-	<link rel="icon" type="image/x-icon" href="images/favicon.ico">
-	<link rel="stylesheet" type="text/css" href="styles.css">
-	
-
+    <!-- Meta information about the document -->
+    <meta charset="utf-8">
+    <title>Cline Family Racing</title>
+    <meta name="author" content="William Barker">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Favicon for the webpage -->
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    
+    <!-- Linking external stylesheets -->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    
+    <!-- Including jQuery and jQuery UI libraries -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
 </head>
 <body class="ext-body">
-	<header>
-		<h1 class="ext-h1">Cline Family Racing</h1>
-		<nav>
-			<table class="external-nav-table">
-				<tr>
-					<td class="external-nav-td"><a class="ext-nav-a" href="index.html">Home</a></td>
-					<td class="external-nav-td"><a class="ext-nav-a" href="about.html">About</a></td>
-					<td class="external-nav-td"><a class="ext-nav-a" href="photos.html">Photos</a></td>
-					<td class="external-nav-td"><a class="ext-nav-a" href="sponsors.html">Sponsors</a></td>
-				</tr>
-			</table>
-		</nav>
-	</header>
+    <!-- Header section containing the page title and navigation -->
+    <header>
+        <h1 class="ext-h1">Cline Family Racing</h1>
+        <!-- Navigation section -->
+        <nav>
+            <table class="external-nav-table">
+                <tr>
+                    <!-- Navigation links -->
+                    <td class="external-nav-td"><a class="ext-nav-a" href="index.html">Home</a></td>
+                    <td class="external-nav-td"><a class="ext-nav-a" href="about.html">About</a></td>
+                    <td class="external-nav-td"><a class="ext-nav-a" href="Media.html">Media</a></td>
+                    <td class="external-nav-td"><a class="ext-nav-a" href="sponsors.html">Sponsors</a></td>
+                </tr>
+            </table>
+        </nav>
+    </header>
 
-	<main>
-		<section>
-			
-			<h2 class="ext-h2">Current Sponsors</h2>
-			
-				<p>United Rentals</p>
-			<img src="images\united-rentals-vector-logo.png" width="200" height="100">
-			<br><br>
-			<p>Summit Racing</p>
-			<img src="images\Summit logo.png" width="200" height="100">
-			<br><br>
-			<p>Advance Auto Parts</p>
-			<img src="images\Advance logo.png" width="200" height="100">
-			
-		</section>
-		<section>
-			<h2 class="ext-h2">Become a Sponsor</h2>
-			<br><br>
-			<div class="section-container">
-				<p>If you would like to be come a sponsor</p>
-				<p>Please contact us at: 304-369-6421</p>
-				<p>Clinefamilyracing@hotmail.com</p>
-			</div><br><br>
-		</section>
-	</main>
-	<footer>
+    <!-- Main content section -->
+    <main>
+        <!-- Sponsors section -->
+        <section>
+            <h2 class="ext-h2">Current Sponsors</h2>
+            <!-- Sponsor details with different alignments -->
+            <div style="text-align: left;">
+                <p>United Rentals</p>
+                <img src="images/united-rentals-vector-logo.png" alt="United Rentals" width="300" height="150"><br><br>
+            </div>
+            <div style="text-align: center;">
+                <p>Summit Racing</p>
+                <img src="images/Summit-logo.png" alt="Summit Racing" width="300" height="150"><br><br>
+            </div>
+            <div style="text-align: right;">
+                <p>Advance Auto Parts</p>
+                <img src="images/Advance-logo.png" alt="Advance Auto" width="300" height="150"><br><br>
+            </div>
+        </section>
+        
+        <!-- Become a Sponsor section -->
+        <section>
+            <h2 class="ext-h2">Become a Sponsor</h2>
+            <div class="section-container">
+                <p>If you would like to become a sponsor, please contact us at:</p>
+                <p>304-555-5555</p>
+                <address>
+  					<strong>Cline Family Racing</strong><br>
+  					1234 Racing Way<br>
+  					Julian, WV 25529<br>
+  					
+				</address>
+
+                <p>Email: Clinefamilyracing@hotmail.com</p>
+                <!-- Mailto link for sending an email -->
+                <a href="mailto:Clinefamilyracing@hotmail.com">Send Email</a>
+
+            </div>
+            <br><br>
+            
+            <br><br>
+            <p>We are located in Julian, WV</p>
+            <!-- Map section -->
+            <div id="map"></div>
+        </section>
+    </main>
+    
+    <!-- Footer section containing weather info and links -->
+    <footer>
+        <p>Current Weather In Julian, WV</p>
+        <div id="weather"></div>
+        <br><br>
+        
+        <!-- Copyright information -->
         &copy;2024 Cline Family Racing.<br>
         All rights reserved.<br><br>
-
-        <a href="https://validator.w3.org/check?uri=referer" referrerpolicy="unsafe-url">Validate HTML</a> <br>
-
+        
+        <!-- Validation links -->
+        <a href="https://validator.w3.org/check?uri=referer" referrerpolicy="unsafe-url">Validate HTML</a><br>
         <a href="https://jigsaw.w3.org/css-validator/check/referer" referrerpolicy="unsafe-url">Validate CSS</a>
     </footer>
 
+    <!-- Load JavaScript files -->
+    <script src="scripts.js"></script>
+    <!-- Including Google Maps API with an async and defer loading strategy -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDeKtPaeg0fBQrdksnSo1VfMNFzEaENMNw&callback=initMap" async defer></script>
 </body>
 </html>
